@@ -13,11 +13,6 @@ function draw() {
 }
 
 function drawGrid() {
-	//Utils.drawLine(75, 75, 325, 75);
-	//Utils.drawLine(75, 125, 325, 125);
-	// Utils.drawLine(75, 325, 75, 75);
-	//Utils.drawLine(75, 325, 75, 75);
-
 	let i = 0;
 	while (i < 6) {
 		let x = 75 + i * 50;
