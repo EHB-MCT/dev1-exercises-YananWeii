@@ -3,7 +3,7 @@ import context from "../../scripts/context.js";
 import * as Utils from "../../scripts/utils.js";
 
 draw();
-drawCircle();
+drawLines();
 
 function draw() {
 	context.lineWidth = 2;
@@ -12,10 +12,11 @@ function draw() {
 	context.fillRect(50, 50, 300, 300);
 }
 
-function drawCircle() {
+function drawLines() {
 	let i = 1;
-	while (i <= 10) {
-		Utils.strokeCircle(200, 200, i * 25);
+	while (i <= 35) {
+		Utils.drawLine(50, 50, i * 10, 350);
+		Utils.drawLine(50, 50, 350, i * 10);
 		i++;
 	}
 }

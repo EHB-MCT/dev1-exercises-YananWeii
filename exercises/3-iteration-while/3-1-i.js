@@ -15,7 +15,11 @@ function draw() {
 function drawCircle() {
 	let i = 1;
 	while (i <= 10) {
-		Utils.strokeCircle(200, 200, i * 25);
+		Utils.strokeCircle(200, 200, i * 15);
+		Utils.strokeCircle(50, 50, i * 15);
+		Utils.strokeCircle(350, 50, i * 15);
+		Utils.strokeCircle(50, 350, i * 15);
+		Utils.strokeCircle(350, 350, i * 15);
 		i++;
 	}
 }

@@ -3,7 +3,7 @@ import context from "../../scripts/context.js";
 import * as Utils from "../../scripts/utils.js";
 
 draw();
-drawGrid();
+drawLines();
 
 function draw() {
 	context.lineWidth = 2;
@@ -12,13 +12,12 @@ function draw() {
 	context.fillRect(50, 50, 300, 300);
 }
 
-function drawGrid() {
+function drawLines() {
 	let i = 0;
-	while (i < 6) {
-		let x = 75 + i * 50;
-		let y = x;
-		Utils.drawLine(75, y, 325, y);
-		Utils.drawLine(x, 75, x, 325);
-		i = i + 1;
+	while (i < 7) {
+		Utils.drawLine(50 + 25 * i, 200 + 25 * i, 200 + 25 * i, 50 + 25 * i);
+
+		Utils.drawLine(50 + 25 * i, 200 - 25 * i, 200 + 25 * i, 350 - 25 * i);
+		i++;
 	}
 }
